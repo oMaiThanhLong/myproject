@@ -62,6 +62,8 @@ class BoardTopicsTests(TestCase):
 class NewTopicTests(TestCase):
     def setUp(self):
         Board.objects.create(name='Django', description='Django board.')
+        User.objects.create_user(username='admin', email='admin@gmail.com', password='123')
+        self.client.login(username='admin', password='123')
 
     def test_new_topic_view_success_status_code(self):
         url = reverse('new_topic', kwargs={'pk': 1})

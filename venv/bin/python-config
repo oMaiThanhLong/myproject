@@ -1,4 +1,4 @@
-#!/Users/maigialong/myproject/venv/bin/python
+#!/home/mai.thanh.long/Desktop/code/myproject/venv/bin/python
 
 import sys
 import getopt
